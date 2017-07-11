@@ -1,0 +1,303 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i');
+
+html{
+  font-size: 16px;
+}
+
+body{
+  font-family: 'Open Sans', 'Century Gothic', 'Arial', sans-serif ;
+  color: #4A4A4A;
+}
+
+/*Text*/
+h1{
+  font-size: 2.0rem;
+  font-weight: 900;
+}
+
+h2{
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+a{
+  text-decoration: none;
+}
+
+.text-center{
+  text-align: center;
+}
+
+.bold{
+  font-weight: 800;
+}
+
+/*Flex*/
+.row-flex{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.row-flex-start{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.row-flex-with-wrap{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.col-flex{
+  display: flex;
+  flex-direction: column;
+}
+
+/*Visibility*/
+.for-mobile{
+  display:none;
+}
+
+/*Images and Videos*/
+img, video{
+  width: 100%;
+  height: auto;
+}
+
+.small-img-container{
+  width: 30%;
+}
+
+.large-img-container{
+  width: 60%;
+}
+
+/*Shared Layout Components - Shared by 2 or more Components*/
+.with-side-content{
+  padding: 2rem 1.5rem;
+}
+
+.side-content{
+  padding: 0rem 1rem;
+}
+
+.info{
+  width: 465px;
+  margin-bottom: 1rem;
+}
+
+.campus-info, .details{
+  margin-left: 1rem;
+}
+
+.info-text h1, .companies-info p, .thesis-video-info p{
+  margin-bottom: 2.0rem;
+}
+
+#thesis-exhibits-title, .course-selection{
+  margin-top: 2rem;
+}
+
+.details p, .p-courses{
+  margin: 0.5rem 0;
+}
+
+/* Header section*/
+header{
+  background-color: #DBDBDB;
+}
+
+nav{
+  height: 4rem;
+  background-color: #FFF;
+}
+
+.logo{
+  margin-left: 1.5rem;
+}
+
+.desktop-nav span{
+  margin-right: 1rem;
+}
+
+/*Intro*/
+.info-text{
+  margin-left: 2.5rem;
+}
+
+.info-text h2{
+  margin-bottom: 1.5rem;
+}
+
+.start-btn h2{
+  margin: 0;
+}
+
+.start-btn{
+  background-color: #9B9B9B;
+  color:white;
+  padding: 1.0rem 0;
+}
+
+/*Information section*/
+.our-companies, .thesis-video{
+  margin: 0rem 1.5rem 0 0;
+}
+
+.companies-info h1{
+  padding: 2rem 0 1.5rem 0;
+}
+
+.details{
+  width: 65%;
+}
+
+/*Start learning - Courses section*/
+.start-learning{
+  background-color: #F5F4F5;
+  padding: 2rem 1rem;
+}
+
+.course{
+  background-color: #FFF;
+  margin: 0 2rem 1rem 2rem;
+  width: 25%;
+}
+
+.course-info{
+  padding: 1rem 1rem 2.5rem 1rem;
+}
+
+.course-info h2{
+  margin-top: 1rem;
+}
+
+/*Thesis exhibits section*/
+.thesis-video-info h1{
+  margin: 1.5rem 0;
+}
+
+/*Footer section*/
+footer p{
+  padding: 1rem 1.5rem;
+}
+
+footer span{
+  margin: 0 1rem;
+}
+
+@media only screen and (max-width: 599px) {/*for phone only*/
+    .not-in-mobile{
+      display: none;
+    }
+
+    .for-mobile{
+      display: block;
+    }
+
+    .inline-flex-mobile{
+      display: inline-flex;
+    }
+
+    .mobile-nav img{
+      margin-left: 2.0rem;
+    }
+
+    .mobile-nav img:nth-last-child(3n+1){
+      margin-right: 2.0rem;
+    }
+
+    .mobile-course-selection{
+      margin-top: 1rem;
+    }
+
+    .course-btn{
+      background-color: #D8D8D8;
+      color: #4d4d4d;
+      padding: 1rem;
+      margin: 0.5rem;
+    }
+
+}
+
+@media only screen and (max-width: 899px) {
+
+  .not-in-tablet{
+    display: none;
+  }
+
+  .for-tablet{
+    display: block;
+  }
+
+  .col-flex-sm{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .small-img-container, .large-img-container, .info, .details{
+    width: 100%;
+  }
+
+  .course{
+    width: 38%;
+  }
+
+  .mobile-tablet-banner{
+    position: relative;
+    top: -1rem;
+    width: 100vw;
+  }
+
+  .with-side-content{
+    padding: 1rem 1.5rem 2rem 1.5rem;
+  }
+
+  .side-content {
+    padding: 0;
+  }
+
+  .campus-info, .thesis-video{
+    margin: 0;
+  }
+
+  .info-text{
+    margin-left: 0;
+  }
+
+  .details h2, .small-course-selection{
+    margin-top: 1rem;
+  }
+
+  .details p{
+    margin: 1rem 0;
+  }
+
+  #thesis-exhibits-title{
+    margin-bottom: 1rem;
+  }
+
+}
+
+@media only screen and (min-width: 900px){
+  .start-btn:hover{
+    background-color: #4A4A4A;
+  }
+
+  .start-btn, .start-btn:hover, .info:hover{
+    transition: background-color 0.75s;
+  }
+
+  .info:hover{
+    background-color: #D8D8D8;
+  }
+
+}
